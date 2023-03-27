@@ -1,0 +1,114 @@
+/* <!-- -------- Google Font Roboto -------- --> */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: none;
+}
+.btn {
+    border: transparent;
+    border-radius: 1em;
+}
+
+.card {
+    border: transparent;
+    border-radius: 2em;
+}
+
+        /* ----- Nav Section ----- */
+
+.navbar {background-color: white;
+    font-weight: bolder;
+}
+
+        /* ----- Header Section ----- */
+
+#home {
+    margin-top:2em;
+    margin-bottom: 4em;
+    background-color: #F8EAC7;
+    border-radius: 1em;
+}        
+.head-item {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.head-item-info {
+    padding: 2em 2em;
+    align-self: center;
+}
+.head-item h1{
+    font-weight: bolder;
+}
+.head-item h2{
+    font-weight: bolder;
+    color: #0060aa;
+}
+.head-item-img {
+    /* padding: 2em; */
+    width: auto;
+    height: 25em;
+    align-self: center;
+    justify-self: center;
+}
+.head-item-img img {
+    /* width: 100%; */
+    height: 100%;
+    align-self: center;
+}
+
+        /* ----- Categorie Section ----- */
+
+.categoie-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+        /* ----- Product Section ----- */
+main {
+    background-color: #F8EAC7;
+}
+.product-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.product .card {
+    display: flex;
+    justify-content: space-between;
+}
+
+        /* ----- Contact Section ----- */
+
+.contact-section {
+    margin: 4em 0.5em;
+}
+.contact-section .row {
+    padding: 4em 0.5em;
+    background-color: #F8EAC7;
+    border-radius: 1em;
+}
+input {
+    border: transparent;
+    border-radius: 1em;
+}
+
+        /* ----- Mobile Media  ----- */
+
+@media screen and (max-width: 768px) {
+    .head-item {
+        grid-template-columns: repeat(1,1fr);
+        display: flex;
+        flex-direction: column-reverse; 
+        flex-wrap: wrap;
+    }
+    .head-item-info {
+        padding: 2em 2em;
+        align-self: center;
+    }
+}
